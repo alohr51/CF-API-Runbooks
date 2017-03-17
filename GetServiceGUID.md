@@ -1,16 +1,16 @@
-How to get a Service GUID using the CF API
+## How to get a Service GUID using the CF API
 
-2. Get the Secure Gateway service GUID from CF API
+This uses the Secure Gateway service as an example.
 
 GET 
   `https://api.ng.bluemix.net/v2/services?q=label:SecureGateway`
 
-Headers: 
-  Key: `Authorization`
-  Value: `bearer <your bearer token>`
+Headers:
+  * Key: `Authorization`
+    * Value: `bearer <your bearer token>`
 
 
-Response will include guid of the secure gateway service in the resources array under the "metadata" key
+Response will include guid of the Secure Gateway service in the resources array under the "metadata" key
 
 ```
 {
