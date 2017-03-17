@@ -2,10 +2,10 @@
 
 This uses the Secure Gateway service as an example.
 
-GET 
+**GET**
   `https://api.ng.bluemix.net/v2/services?q=label:SecureGateway`
 
-Headers:
+**Headers**
   * Key: `Authorization`
     * Value: `bearer <your bearer token>`
 
