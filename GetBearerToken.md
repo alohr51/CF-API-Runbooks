@@ -1,27 +1,26 @@
-Get your Bluemix bearer token
+## Get your Bluemix bearer token
 
-POST
+**POST**
   `https://login.ng.bluemix.net/UAALoginServerWAR/oauth/token`
 
-Headers
-  key: `Authorization`
-  value: `Basic Y2Y6`
+**Headers**
+  * Key: `Authorization`
+    * Value: `Basic Y2Y6`
 
-  key: `Accept`
-  value: `application/json`
+  * Key: `Accept`
+    * Value: `application/json`
 
-Body
-  key: `grant_type`
-  value: `password`
+**Body**
+  * Key: `grant_type`
+    * Value: `password`
 
-  key: `username`
-  value: `<your bluemix username>`
+  * Key: `username`
+    * Value: `<your bluemix username>`
   
-  key: `password`
-  value: `<your bluemix password>`
+  * Key: `password`
+    * Value: `<your bluemix password>`
 
-Response will include an "access_token" this is your bearer token copy this and use
-for the Authorization header in the next call.
+The response will include an `access_token` this is your bearer token.
 
 Example
 ```
